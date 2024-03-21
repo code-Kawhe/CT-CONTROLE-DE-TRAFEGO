@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #3271B6;
+}
+
+.Nav {
+    width: 300px;
+    height: 100vh;
+    background-color: #194575;
+    position: absolute;
+    left: 0;
+    top: 0q;
+}
+
+.Header-Logo {
+    width: calc(100% - 40px);
+    height: 120px;
+    margin: 20px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
+}
+
+.Links {
+    width: calc(100% - 20px);
+    margin: 10px;
+    height: auto;
+    /* background-color: red; */
+    gap: 5px;
+}
+
+.Link {
+    width: calc(100% - 20px);
+    margin: 10px;
+    height: 50px;
+    padding: px;
+    /* background-color: rgb(43, 255, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+}
+.Link:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+.Link:active {
+    background-color: rgba(255, 255, 255, 0.145);
+}
+
+.Links .Link .Img_Link {
+    width: 50px;
+    /* aspect-ratio: 1/1; */
+    margin-right: 25px;
+}
+
+.Links .Link .Text_Link {
+    font-size: 24px;
+}
