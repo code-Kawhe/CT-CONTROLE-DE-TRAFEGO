@@ -7,15 +7,13 @@
 
 body {
     background-color: #3271B6;
+    display: flex;
 }
 
 .Nav {
     width: 300px;
     height: 100vh;
     background-color: #194575;
-    position: absolute;
-    left: 0;
-    top: 0q;
 }
 
 .Header-Logo {
@@ -52,7 +50,8 @@ body {
     border: none;
     border-radius: 5px;
 }
-.Link:hover {
+.Link:hover,
+.active {
     background-color: rgba(255, 255, 255, 0.07);
 }
 .Link:active {
@@ -67,4 +66,9 @@ body {
 
 .Links .Link .Text_Link {
     font-size: 24px;
+}
+
+main {
+    width: calc(100% - 300px);
+    height: 100vh;
 }
