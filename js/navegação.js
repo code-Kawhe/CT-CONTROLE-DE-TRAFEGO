@@ -10,6 +10,7 @@ const btnCadCa = document.getElementById("Cad-Ca")
 const btnCadIn = document.getElementById("Cad-In")
 const btnCadLoc = document.getElementById("Cad-Loc")
 const btnCadCola = document.getElementById("Cad-Cola")
+const BtnAddCa = document.getElementById("Btn-Add-Ca")
 
 //MAIN
 btnhome.addEventListener("click", () =>{
@@ -40,4 +41,8 @@ btnCadLoc.addEventListener("click", () =>{
 })
 btnCadCola.addEventListener("click", () =>{
     window.location.href = "/Cad-colaboradores.html"
+})
+
+BtnAddCa.addEventListener("click", () =>{
+    window.location.href = "/Cad-caminhoes-add.html"
 })

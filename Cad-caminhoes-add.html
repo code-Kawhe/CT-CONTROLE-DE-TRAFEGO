@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style-Ca.css">
     <link rel="stylesheet" href="Style-Cadastros.css">
+    <link rel="stylesheet" href="Style-PRE.css">
     <title>CONTROLE DE TRAFEGO</title>
 </head>
+
 <body>
-    <nav class="Nav">
+    <nav class="Nav" id="NAV_G">
         <section class="Header-Logo">Route Ranger</section>
         <section class="Links">
             <button class="Link" id="home">
@@ -53,25 +57,62 @@
             </div>
         </nav>
         <div class="Texte">
-            <img id="Btn-Add-Ca" src="./icons/btn.png" alt="add">
-            <p>CAMINHÕES</p>
+            <img src="./icons/back.png" alt="add">
+            <img class="save" src="./icons/save.png" alt="add" id="Save_CARRETA">
+            <p>ADICIONAR CAMINHÃO</p>
         </div>
         <div class="main-CadCA">
-            <div class="Card-Ca">
-                <div class="Ca1">
-                    <img class="img1" src="./icons/caminhao.png" alt="CAMINHÃO">
-                    <img class="img2" src="./icons/carreta.png" alt="CARRETA">
-                    <img class="img3 inative" src="./icons/carreta.png" alt="CARRETA">
+            <div class="header-Ca-Text">CAMINHÃO:</div>
+            <div class="F-G">
+                <div class="Row-Cad-Ca">
+                    <p>Nº:</p>
+                    <input type="text" name="Nunber" id="NCa">
                 </div>
-                <div class="Ca2">
-                    <p>N°: <span>101</span></p>
-                    <p>CARGA TOTAL: <span>50</span>t</p>
+                <div class="Row-Cad-Ca">
+                    <p>MARCA:</p>
+                    <input type="text" name="Nunber" id="MCa">
                 </div>
-                <div class="Ca3"></div>
+                <div class="Row-Cad-Ca">
+                    <p>MODELO:</p>
+                    <input type="text" name="Nunber" id="ModCa">
+                </div>
+                <div class="Row-Cad-Ca">
+                    <p>PLACA:</p>
+                    <input type="text" name="Nunber" id="PCa">
+                </div>
+            </div>
+            <div class="header-Ca-Text">CARRETA:
+                <!-- <span><img class="imgAddIt" id="Btn-Add-IT" src="./icons/btn.png" alt="add"></span> -->
+            </div>
+            <div class="F-G1" id="ITENS-CARRETAS">
+                <div class="F-G1">
+                    <div class="header-Ca-Text">1º</div>
+                    <div class="F-G">
+                        <div class="Row-Cad-Ca">
+                            <p>Nº:</p>
+                            <input type="text" name="Nunber" id="MNCa">
+                        </div>
+                        <div class="Row-Cad-Ca">
+                            <p>MARCA:</p>
+                            <input type="text" name="Nunber" id="MMCa">
+                        </div>
+                        <div class="Row-Cad-Ca">
+                            <p>MODELO:</p>
+                            <input type="text" name="Nunber" id="MModCa">
+                        </div>
+                        <div class="Row-Cad-Ca">
+                            <p>PLACA:</p>
+                            <input type="text" name="Nunber" id="MPCa">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
     <script src="./js/main.js"></script>
     <script src="./js/navegação.js"></script>
+    <script src="./js/draw.js"></script>
+    <script src="./js/CAMI/Save.js"></script>
 </body>
+
 </html>

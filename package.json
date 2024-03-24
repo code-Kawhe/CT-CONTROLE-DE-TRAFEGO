@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "quick.db": "^9.1.7"
+    "quick.db": "^9.1.7",
+    "uuid": "^9.0.1"
   }
 }
