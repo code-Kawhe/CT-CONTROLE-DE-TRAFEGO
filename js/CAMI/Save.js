@@ -1,32 +1,41 @@
-
 const SaveCARRETA = document.getElementById("Save_CARRETA")
-
-const NCa = document.getElementById("NCa")
-const MCa = document.getElementById("MCa")
-const ModCa = document.getElementById("ModCa")
-const PCa = document.getElementById("PCa")
-
-const MNCa = document.getElementById("MNCa")
-const MMCa = document.getElementById("MMCa")
-const MModCa = document.getElementById("MModCa")
-const MPCa = document.getElementById("MPCa")
-
-const ca =
-{
-    "CA_N": NCa.value,
-    "CA_marca": MCa.value,
-    "CA_modelo": ModCa.value,
-    "CA_placc": PCa.value,
-    "CR_N": MNCa.value,
-    "CR_marca": MMCa.value,
-    "CR_modelo": MModCa.value,
-    "CR_placc": MPCa.value,
-}
-
-
-console.log(ca)
 
 SaveCARRETA.addEventListener("click", () => {
 
-    localStorage.setItem(`CA`, JSON.stringify(ca));
+    const NCa = document.getElementById("NCa")
+    const MCa = document.getElementById("MCa")
+    const ModCa = document.getElementById("ModCa")
+    const PCa = document.getElementById("PCa")
+
+    const MNCa = document.getElementById("MNCa")
+    const MMCa = document.getElementById("MMCa")
+    const MModCa = document.getElementById("MModCa")
+    const MPCa = document.getElementById("MPCa")
+
+    const ca =
+    {
+        "CA_N": NCa.value,
+        "CA_marca": MCa.value,
+        "CA_modelo": ModCa.value,
+        "CA_placc": PCa.value,
+        "CR_N": MNCa.value,
+        "CR_marca": MMCa.value,
+        "CR_modelo": MModCa.value,
+        "CR_placc": MPCa.value,
+    }
+
+    const CAM_EXT = JSON.parse(localStorage.getItem("CAM")) || []
+    CAM_EXT.push(ca)
+    console.log(CAM_EXT)
+    localStorage.setItem(`CAM`, [JSON.stringify(CAM_EXT)])
+    
+    // Limpar os campos de input
+    document.getElementById("NCa").value = "";
+    document.getElementById("MCa").value = "";
+    document.getElementById("ModCa").value = "";
+    document.getElementById("PCa").value = "";
+    document.getElementById("MNCa").value = "";
+    document.getElementById("MMCa").value = "";
+    document.getElementById("MModCa").value = "";
+    document.getElementById("MPCa").value = "";
 })
