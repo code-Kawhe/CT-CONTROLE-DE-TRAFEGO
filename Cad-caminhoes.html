@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="Style-Cadastros.css">
     <title>CONTROLE DE TRAFEGO</title>
 </head>
+
 <body>
     <nav class="Nav">
         <section class="Header-Logo">Route Ranger</section>
@@ -59,8 +61,15 @@
         <div class="main-CadCA" id="main-CadCA">
         </div>
     </main>
+    <script>
+        const BtnAddCa = document.getElementById("Btn-Add-Ca")
+        BtnAddCa.addEventListener("click", () => {
+            window.location.href = "/Cad-caminhoes-add.html"
+        })
+    </script>
     <script src="./js/main.js"></script>
     <script src="./js/CAMI/draw.js"></script>
     <script src="./js/navegação.js"></script>
 </body>
+
 </html>

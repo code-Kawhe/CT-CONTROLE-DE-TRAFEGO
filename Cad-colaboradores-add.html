@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style-Ca.css">
     <link rel="stylesheet" href="Style-Cadastros.css">
+    <link rel="stylesheet" href="Style-PRE.css">
     <title>CONTROLE DE TRAFEGO</title>
 </head>
+
 <body>
-    <nav class="Nav">
+    <nav class="Nav" id="NAV_G">
         <section class="Header-Logo">Route Ranger</section>
         <section class="Links">
             <button class="Link" id="home">
@@ -43,23 +47,37 @@
                 <img src="./icons/monte.png" alt="">
                 <p>INSUMOS</p>
             </div>
-            <div class="Cad-Link active" id="Cad-Loc">
+            <div class="Cad-Link" id="Cad-Loc">
                 <img src="./icons/local.png" alt="">
                 <p>LOCAIS</p>
             </div>
-            <div class="Cad-Link" id="Cad-Cola">
+            <div class="Cad-Link active" id="Cad-Cola">
                 <img src="./icons/person.png" alt="">
                 <p>COLABORADORES</p>
             </div>
         </nav>
         <div class="Texte">
-            <img id="Btn-Add-Loc" src="./icons/btn.png" alt="add">
-            <p>LOCAL</p>
+            <img src="./icons/back.png" alt="add">
+            <img class="save" src="./icons/save.png" alt="add" id="Save_COL">
+            <p>ADICIONAR CAMINHÃO</p>
         </div>
-        <div class="main-CadCA" id="main-CadLoc">
+        <div class="main-CadCA">
+            <div class="header-Ca-Text">CAMINHÃO:</div>
+            <div class="F-G">
+                <div class="Row-Cad-Ca">
+                    <p>NOME:</p>
+                    <input type="text" name="Nunber" id="NOMECOL">
+                </div>
+                <div class="Row-Cad-Ca">
+                    <p>FUNÇÃO:</p>
+                    <input type="text" name="Nunber" id="FCOL">
+                </div>
+            </div>
         </div>
     </main>
     <script src="./js/main.js"></script>
     <script src="./js/navegação.js"></script>
+    <script src="./js/COL/save.js"></script>
 </body>
+
 </html>

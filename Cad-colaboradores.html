@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="Style-Cadastros.css">
     <title>CONTROLE DE TRAFEGO</title>
 </head>
+
 <body>
     <nav class="Nav">
         <section class="Header-Logo">Route Ranger</section>
@@ -53,12 +55,19 @@
             </div>
         </nav>
         <div class="Texte">
-            <img id="Btn-Add-Ca" src="./icons/btn.png" alt="add">
+            <img id="Btn-Add-COL" src="./icons/btn.png" alt="add">
+            <p>COLABORADOR</p>
         </div>
-        <p>COLABORADOR</p>
-        <div class="main-CadCA" id="main-CadCA">
+        <div class="main-CadCA" id="main-CadCOL">
         </div>
     </main>
+    <script>
+        const BtnAddCOL = document.getElementById("Btn-Add-COL")
+        BtnAddCOL.addEventListener("click", () => {
+            window.location.href = "/Cad-colaboradores-add.html"
+        })
+    </script>
     <script src="./js/main.js"></script>
     <script src="./js/navegação.js"></script>
+    <script src="./js/COL/draw.js"></script>
 </body>

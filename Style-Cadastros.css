@@ -99,3 +99,15 @@
     position: absolute;
     left: 375px;
 }
+
+.Card-CO {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.17);
+    width: calc(100% / 5);
+    aspect-ratio: 3/1;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+}
