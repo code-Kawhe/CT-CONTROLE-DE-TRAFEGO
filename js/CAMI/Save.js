@@ -11,6 +11,7 @@ SaveCARRETA.addEventListener("click", () => {
     const MMCa = document.getElementById("MMCa")
     const MModCa = document.getElementById("MModCa")
     const MPCa = document.getElementById("MPCa")
+    const MMPA = document.getElementById("MMPA")
 
     const ca =
     {
@@ -21,7 +22,8 @@ SaveCARRETA.addEventListener("click", () => {
         "CR_N": MNCa.value,
         "CR_marca": MMCa.value,
         "CR_modelo": MModCa.value,
-        "CR_placc": MPCa.value,
+        "CR_placa": MPCa.value,
+        "CR_carga": MMPA.value,
     }
 
     const CAM_EXT = JSON.parse(localStorage.getItem("CAM")) || []
@@ -38,4 +40,5 @@ SaveCARRETA.addEventListener("click", () => {
     document.getElementById("MMCa").value = "";
     document.getElementById("MModCa").value = "";
     document.getElementById("MPCa").value = "";
+    document.getElementById("MMPA").value = "";
 })
